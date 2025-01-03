@@ -39,10 +39,7 @@ const NewArrival = () => {
       },
   ];
 
-  // دالة للانتقال إلى صفحة تفاصيل المنتج
-  const handleShopNow = (id) => {
-    navigate(`/products/${id}`); // الانتقال إلى صفحة التفاصيل باستخدام id المنتج
-  };
+
 
   return (
     <section className="new-arrival-section">
@@ -52,7 +49,6 @@ const NewArrival = () => {
           <div
             key={item.id}
             className="new-arrival-card"
-            onClick={() => handleShopNow(item.id)} // إضافة onClick للبطاقة بأكملها
           >
             <div className="image-container">
               <img src={item.image} alt={`Product ${item.id}`} className="new-arrival-image" />
