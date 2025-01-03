@@ -8,7 +8,7 @@
 
 /* تصميم القسم */
 .hero-section {
-  background-color: var(--background-color);
+  background: linear-gradient(135deg, #1b1b3a, #111);
   color: var(--text-color);
   min-height: 100vh;
   display: flex;
