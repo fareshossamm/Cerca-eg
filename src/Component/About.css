@@ -1,0 +1,273 @@
+/* General Styles */
+.aboutus-page {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #1b1b3a, #110e24);
+    overflow-x: hidden;
+  }
+  
+  /* Hero Section */
+  .aboutus-hero-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+    position: relative;
+  }
+    /* Responsive Design */
+@media (max-width: 768px) {
+  /* Hero Section */
+  .aboutus-hero-section {
+    height: 100vh;
+    padding: 200px 20px 100px;
+  }
+  }
+  .aboutus-hero-content h1 {
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #e94560;
+  }
+  /* Responsive Design */
+@media (max-width: 768px) {
+  .aboutus-hero-content h1 {
+    font-size: 35px;
+  
+  }
+  }
+  .aboutus-hero-content p {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+    font-weight: 300;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #bfbcbc;
+
+  }
+    /* Responsive Design */
+@media (max-width: 768px) {
+  .aboutus-hero-content p {
+    font-size: 20px;
+    line-height: 1.8;
+    font-weight: 100;
+    color: #bfbcbc;
+
+
+  }
+  }
+  .aboutus-explore-button {
+    background-color: #131425;
+    color: #fff;
+    padding: 14px 40px;
+    font-size: 1.3rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  @media (max-width: 768px) {
+    .aboutus-explore-button {
+
+      font-size: 20px;
+      font-weight: bold;
+    
+    }
+    }
+  .aboutus-explore-button:hover {
+    background-color: #e94560;
+    transform: scale(1.05);
+  }
+  
+  /* Brand Story Section */
+  .aboutus-story-section {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #1b1b3a, #111);
+    text-align: center;
+  }
+  
+  .aboutus-story-section h2 {
+    font-size: 2.8rem;
+    color: #e94560;
+    margin-bottom: 20px;
+    font-weight: 600;
+
+  }
+  @media (max-width: 768px) {
+    .aboutus-story-section h2 {
+      font-size: 35px;
+   
+  
+    }
+    }
+  .aboutus-story-section p {
+    font-size: 1.2rem;
+    color: #bfbcbc;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  @media (max-width: 768px) {
+    .aboutus-story-section p {
+      font-size: 18px;
+   
+    }
+    }
+  /* Values Section */
+  .aboutus-values-section {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #1b1b3a, #111);
+    text-align: center;
+  }
+  
+  .aboutus-values-section h2 {
+    font-size: 2.5rem;
+    color: #e94560;
+    font-weight: 600;
+
+    margin-bottom: 40px;
+  }
+  @media (max-width: 768px) {
+    .aboutus-values-section h2 {
+      font-size: 35px;
+ 
+    }
+    }
+  .aboutus-values-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+  
+  .aboutus-value {
+    background: linear-gradient(135deg, #1b1b3a, #111);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+  
+  .aboutus-value h3 {
+    font-size: 1.8rem;
+    color: #e94560;
+    margin-bottom: 15px;
+    font-weight: 600;
+
+  }
+  @media (max-width: 768px) {
+    .aboutus-value h3 {
+      font-size: 25px;
+     
+  
+    }
+    }
+  .aboutus-value p {
+    font-size: 1rem;
+    color: #bfbcbc;
+  }
+  @media (max-width: 768px) {
+    .aboutus-value p {
+      font-size: 16px;
+      color: #bfbcbc;
+    }
+    }
+  .aboutus-value-icon {
+    font-size: 3.5rem;
+    color: #e94560;
+    margin-bottom: 20px;
+  }
+  
+  .aboutus-value:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Vision Section */
+  .aboutus-vision-section {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #1b1b3a, #111);
+    color: #fff;
+  }
+  
+  .aboutus-vision-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #e94560;
+    font-weight: 600;
+  }
+  @media (max-width: 768px) {
+    .aboutus-vision-section h2 {
+      font-size: 35px;
+     
+    }
+    }
+  .aboutus-vision-section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin: 0 auto;
+    max-width: 800px;
+    color: #bfbcbc;
+
+  }
+  @media (max-width: 768px) {
+    .aboutus-vision-section p {
+      font-size: 16px;
+    }
+    }
+  /* Call to Action Section */
+  .aboutus-cta-section {
+    background-color: #e94560; 
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .aboutus-cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+
+  }
+  @media (max-width: 768px) {
+    .aboutus-cta-section h2{
+      font-size: 35px;
+     
+    }
+    }
+  .aboutus-cta-section p {
+    font-size: 1.2rem;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  @media (max-width: 768px) {
+    .aboutus-cta-section p {
+      font-size: 18px;
+    }
+    }
+  .aboutus-cta-section .aboutus-explore-button {
+    background-color: #171d1f; 
+    color: #f9f7f7;
+    padding: 15px 50px;
+    font-size: 1.3rem;
+    margin-top: 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .aboutus-cta-section .aboutus-explore-button:hover {
+    background-color: #171d1f; 
+    color: #fff;
+    transform: scale(1.05);
+  }
+  
