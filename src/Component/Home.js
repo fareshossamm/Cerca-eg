@@ -24,18 +24,21 @@ function Hero() {
     <section className="hero-section">
       <div className="hero-container">
         {/* النصوص */}
-        <div className="hero-content" data-aos="fade-right">
+        <div className="hero-content" data-aos="fade-up">
           <h1 className="hero-title">
             <span className="highlight">Discover</span> the Perfect Hoodie for You
           </h1>
           <p className="hero-description">
             Explore our exclusive collection of hoodies that combine comfort and style. Upgrade your wardrobe with the latest trends. Limited-time offer – don't miss out! 🔥
           </p>
-          <div className="hero-buttons">
-            <Link to="/products" className="hero-btn primary">
-              Shop Now 🛍️
-            </Link>
-          </div>
+           
+        </div>
+
+        {/* تأثيرات إضافية */}
+        <div className="hero-effects">
+          <div className="effect-circle"></div>
+          <div className="effect-circle"></div>
+          <div className="effect-circle"></div>
         </div>
       </div>
     </section>

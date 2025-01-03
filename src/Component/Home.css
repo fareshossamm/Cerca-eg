@@ -1,26 +1,30 @@
 /* الألوان الأساسية للوضع الداكن */
 :root {
-  --primary-color: #ff6b6b; /* لون رئيسي جذاب */
-  --background-color: #1a1a1a; /* لون خلفية داكن */
+  --primary-color: #ff6b6b; /* لون رئيسي */
+  --background-color: #121212; /* لون خلفية داكن */
   --text-color: #ffffff; /* لون النص الأبيض */
   --hover-color: #ff8b8b; /* لون عند التمرير */
 }
 
+/* تصميم القسم */
 .hero-section {
-  background: linear-gradient(135deg, #1b1b3a, #111);
+  background-color: var(--background-color);
   color: var(--text-color);
-  padding: 2rem 1rem;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  overflow: hidden;
+  position: relative;
 }
 
 .hero-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-content {
@@ -28,11 +32,13 @@
   margin: 0 auto;
 }
 
+/* النصوص responsive */
 .hero-title {
-  font-size: 3.5rem;
+  font-size: clamp(2rem, 8vw, 4rem); /* حجم الخط يتكيف مع عرض الشاشة */
   font-weight: bold;
   margin-bottom: 1rem;
   line-height: 1.2;
+  color: var(--text-color);
 }
 
 .highlight {
@@ -41,7 +47,7 @@
 }
 
 .hero-description {
-  font-size: 1.25rem;
+  font-size: clamp(1rem, 4vw, 1.5rem); /* حجم الخط يتكيف مع عرض الشاشة */
   margin-bottom: 2rem;
   color: rgba(255, 255, 255, 0.8);
 }
@@ -54,9 +60,9 @@
 
 .hero-btn {
   padding: 0.75rem 2rem;
-  font-size: 1rem;
+  font-size: clamp(0.875rem, 3vw, 1rem); /* حجم الخط يتكيف مع عرض الشاشة */
   font-weight: bold;
-  border-radius: 8px;
+  border-radius: 25px;
   text-decoration: none;
   transition: all 0.3s ease;
 }
@@ -74,12 +80,64 @@
   box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
 }
 
-/* تأثيرات AOS */
-[data-aos] {
-  opacity: 0;
-  transition-property: opacity, transform;
+/* تأثيرات إضافية */
+.hero-effects {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  overflow: hidden;
 }
 
-[data-aos].aos-animate {
-  opacity: 1;
+.effect-circle {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(255, 107, 107, 0.1), transparent);
+  border-radius: 50%;
+  animation: float 6s infinite ease-in-out;
+}
+
+.effect-circle:nth-child(1) {
+  top: 10%;
+  left: 10%;
+  animation-duration: 8s;
+}
+
+.effect-circle:nth-child(2) {
+  top: 50%;
+  left: 50%;
+  animation-duration: 10s;
+}
+
+.effect-circle:nth-child(3) {
+  top: 70%;
+  left: 80%;
+  animation-duration: 12s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-20px) translateX(20px);
+  }
+}
+
+/* استعلامات الوسائط لضبط الخطوط على الشاشات الصغيرة */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: clamp(1.5rem, 6vw, 3rem); /* حجم أصغر للشاشات الصغيرة */
+  }
+
+  .hero-description {
+    font-size: clamp(0.875rem, 3.5vw, 1.25rem); /* حجم أصغر للشاشات الصغيرة */
+  }
+
+  .hero-btn {
+    padding: 0.5rem 1.5rem; /* حجم أصغر للأزرار على الشاشات الصغيرة */
+  }
 }
