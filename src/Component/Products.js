@@ -13,13 +13,12 @@ import img7 from './IMGS/white2.webp';
 import img8 from './IMGS/blue4.webp'; 
 import img9 from './IMGS/gray double.webp'; 
 import img10 from './IMGS/gray1.webp'; 
-import img11 from './IMGS/P6_1.webp'; 
 
 const productsData = [
   { id: 7, name: 'White Slogan', type: 'Print', oldPrice: 'EGP 1000', price: 'EGP 750', img: img7 },
   { id: 8, name: 'Blue Horizon Hoodie', type: 'Print', oldPrice: 'EGP 1000', price: 'EGP 750', img: img8 },
   { id: 9, name: 'Cerca Culture', type: 'Print', oldPrice: 'EGP 1000', price: 'EGP 750', img: img9 },
-  { id: 11, name: 'Street', type: 'Print', oldPrice: 'EGP 1000', price: 'EGP 750', img: img10 },
+  { id: 10, name: 'Street', type: 'Print', oldPrice: 'EGP 1000', price: 'EGP 750', img: img10 },
   { id: 1, name: 'Cerca Starlight', type: 'Print', oldPrice: 'EGP 1100', price: 'EGP 850', img: img1 },
   { id: 2, name: 'Starry Night', type: 'Print', oldPrice: 'EGP 1100', price: 'EGP 850', img: img2 },
   { id: 3, name: 'Cerca White Lines', type: 'Print', oldPrice: 'EGP 1100', price: 'EGP 850', img: img3 },

@@ -12,7 +12,6 @@ import img7 from './IMGS/white2.webp';
 import img8 from './IMGS/blue4.webp'; 
 import img9 from './IMGS/gray double.webp'; 
 import img10 from './IMGS/gray1.webp'; 
-import img11 from './IMGS/P6_1.webp'; 
 const productsData = [
   { 
     id: 1, 
@@ -87,7 +86,7 @@ const productsData = [
     type: 'Print', 
     oldPrice: 'EGP 1000', 
     price: 'EGP 750', 
-    img: img6, 
+    img: img9, 
   },
   { 
     id: 10, 
@@ -95,7 +94,7 @@ const productsData = [
     type: 'Print', 
     oldPrice: 'EGP 1000', 
     price: 'EGP 750', 
-    img: img6, 
+    img: img10, 
   },
  
 ];
