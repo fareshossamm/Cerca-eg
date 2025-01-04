@@ -16,25 +16,27 @@
   justify-content: center;
   overflow: hidden;
   position: relative;
+  padding: 2rem 1rem;
 }
 
 .hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem;
-  text-align: center;
-  position: relative;
-  z-index: 1;
+  width: 100%;
+  gap: 2rem;
 }
 
+/* النصوص على اليسار */
 .hero-content {
-  max-width: 800px;
-  margin: 0 auto;
+  flex: 1;
+  max-width: 600px;
 }
 
-/* النصوص responsive */
 .hero-title {
-  font-size: clamp(2rem, 8vw, 4rem); /* حجم الخط يتكيف مع عرض الشاشة */
+  font-size: clamp(2rem, 6vw, 3.5rem); /* حجم الخط responsive */
   font-weight: bold;
   margin-bottom: 1rem;
   line-height: 1.2;
@@ -47,20 +49,19 @@
 }
 
 .hero-description {
-  font-size: clamp(1rem, 4vw, 1.5rem); /* حجم الخط يتكيف مع عرض الشاشة */
+  font-size: clamp(1rem, 3vw, 1.25rem); /* حجم الخط responsive */
   margin-bottom: 2rem;
   color: rgba(255, 255, 255, 0.8);
 }
 
 .hero-buttons {
   display: flex;
-  justify-content: center;
   gap: 1rem;
 }
 
 .hero-btn {
   padding: 0.75rem 2rem;
-  font-size: clamp(0.875rem, 3vw, 1rem); /* حجم الخط يتكيف مع عرض الشاشة */
+  font-size: clamp(0.875rem, 2.5vw, 1rem); /* حجم الخط responsive */
   font-weight: bold;
   border-radius: 25px;
   text-decoration: none;
@@ -78,6 +79,22 @@
   border-color: var(--hover-color);
   transform: translateY(-3px);
   box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+}
+
+/* الصورة على اليمين */
+.hero-image {
+  flex: 1;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 /* تأثيرات إضافية */
@@ -127,10 +144,25 @@
   }
 }
 
-/* استعلامات الوسائط لضبط الخطوط على الشاشات الصغيرة */
+/* استعلامات الوسائط للشاشات الصغيرة */
 @media (max-width: 768px) {
+  .hero-container {
+    padding-top: 50px;
+    flex-direction: column; /* الترتيب العمودي على الشاشات الصغيرة */
+    text-align: center;
+  }
+
+  .hero-image {
+    flex: 1;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
   .hero-title {
-    font-size: clamp(1.5rem, 6vw, 3rem); /* حجم أصغر للشاشات الصغيرة */
+    font-size: clamp(1.5rem, 6vw, 2.5rem); /* حجم أصغر للشاشات الصغيرة */
   }
 
   .hero-description {
