@@ -11,7 +11,9 @@ import img6 from './IMGS/P6_1.webp';
 import img7 from './IMGS/white2.webp'; 
 import img8 from './IMGS/blue4.webp'; 
 import img9 from './IMGS/gray double.webp'; 
-import img10 from './IMGS/gray1.webp'; 
+import img10 from './IMGS/gray1.webp';
+import img11 from './IMGS/photo_2025-01-06_09-58-46.jpg'; 
+
 const productsData = [
   { 
     id: 1, 
@@ -251,8 +253,12 @@ function ProductDetails() {
         <div className="actions">
           <button className='order-now' onClick={handleOrderNow}>Order Now</button>
           <button className='order-whatsapp' onClick={handleOrderOnWhatsApp}>Order on WhatsApp</button>
+
         </div>
+        
       </div>
+      <img src={img11} alt="Additional Product" className="sizes-img" />
+
     </div>
   );
 }

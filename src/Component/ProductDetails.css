@@ -98,9 +98,18 @@ body {
 .actions .order-now {
   background: #ff6a95;
 }
-
+.sizes-img{
+  max-width: 500px;
+  margin-top: 50px;
+  border-radius: 20px;
+}
 /* Responsive Styles */
 @media (max-width: 768px) {
+  .sizes-img{
+    max-width: 400px;
+    margin-top: 50px;
+    border-radius: 20px;
+  }
   .product-details {
     flex-direction: column;
     padding: 100px 20px;

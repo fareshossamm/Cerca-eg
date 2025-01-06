@@ -13,7 +13,6 @@ import img7 from './IMGS/white2.webp';
 import img8 from './IMGS/blue4.webp'; 
 import img9 from './IMGS/gray double.webp'; 
 import img10 from './IMGS/gray1.webp'; 
-import img11 from './IMGS/photo_2025-01-06_09-58-46.jpg'; 
 
 const productsData = [
   { id: 7, name: 'White Slogan', type: 'Print', oldPrice: 'EGP 1000', price: 'EGP 750', img: img7 },
@@ -41,7 +40,6 @@ function Products() {
 
   return (
     <div className="products-section">
-      <img src={img11} alt="Additional Product" className="sizes-img" />
 
       <h2 className="products-title" data-aos="fade-down">Our Collection</h2>
       
