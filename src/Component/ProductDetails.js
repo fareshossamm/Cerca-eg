@@ -213,7 +213,7 @@ function ProductDetails() {
 
         <div className="size-selector">
           <h3>Select Size:</h3>
-          {['S', 'M', 'L'].map(size => (
+          {['M', 'L', 'XL'].map(size => (
             <button
               key={size}
               className={`size-button ${selectedSize === size ? 'selected' : ''}`}

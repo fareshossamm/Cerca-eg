@@ -13,6 +13,7 @@ import img7 from './IMGS/white2.webp';
 import img8 from './IMGS/blue4.webp'; 
 import img9 from './IMGS/gray double.webp'; 
 import img10 from './IMGS/gray1.webp'; 
+import img11 from './IMGS/photo_2025-01-06_09-58-46.jpg'; 
 
 const productsData = [
   { id: 7, name: 'White Slogan', type: 'Print', oldPrice: 'EGP 1000', price: 'EGP 750', img: img7 },
@@ -25,7 +26,6 @@ const productsData = [
   { id: 4, name: 'Simple Edge', type: 'Basic', oldPrice: 'EGP 1000', price: 'EGP 750', img: img4 },
   { id: 5, name: 'Simple Edge', type: 'Basic', oldPrice: 'EGP 1000', price: 'EGP 750', img: img5 },
   { id: 6, name: 'Simple Edge', type: 'Basic', oldPrice: 'EGP 1000', price: 'EGP 750', img: img6 },
-  
 ];
 
 function Products() {
@@ -41,6 +41,8 @@ function Products() {
 
   return (
     <div className="products-section">
+      <img src={img11} alt="Additional Product" className="sizes-img" />
+
       <h2 className="products-title" data-aos="fade-down">Our Collection</h2>
       
       {/* Filter Buttons */}

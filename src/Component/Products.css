@@ -118,9 +118,17 @@
 .product-link:hover {
     text-decoration: none; /* Ensures that the underline is not visible when hovered */
 }
-
+.sizes-img{
+    max-width: 500px;
+    margin-bottom: 50px;
+}
 /* Responsive Styles */
 @media (max-width: 768px) {
+    .sizes-img{
+        max-width: 400px;
+        margin-bottom: 30px;
+
+    }
     .products-title {
         font-size: 2.2rem;
     }
