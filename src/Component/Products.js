@@ -17,7 +17,7 @@ import img10 from './IMGS/gray1.webp';
 const productsData = [
   { id: 7, name: 'White Slogan', type: 'Print', oldPrice: 'EGP 1000', price: 'EGP 750', img: img7 },
   { id: 8, name: 'Blue Horizon Hoodie', type: 'Print', oldPrice: 'EGP 1000', price: 'EGP 750', img: img8 },
-  { id: 9, name: 'Cerca Culture', type: 'Print', oldPrice: 'EGP 1000', price: 'EGP 750', img: img9 },
+  { id: 9, name: 'Cerca Culture', type: 'Print', oldPrice: 'EGP 1000', price: 'EGP 750', img: img9, isOutOfStock: true },
   { id: 10, name: 'Street', type: 'Print', oldPrice: 'EGP 1000', price: 'EGP 750', img: img10 },
   { id: 1, name: 'Cerca Starlight', type: 'Print', oldPrice: 'EGP 1100', price: 'EGP 850', img: img1 },
   { id: 2, name: 'Starry Night', type: 'Print', oldPrice: 'EGP 1100', price: 'EGP 850', img: img2 },
@@ -40,7 +40,6 @@ function Products() {
 
   return (
     <div className="products-section">
-
       <h2 className="products-title" data-aos="fade-down">Our Collection</h2>
       
       {/* Filter Buttons */}
@@ -61,16 +60,17 @@ function Products() {
         {filteredProducts.map((product) => (
           <div 
             key={product.id} 
-            className="product-card" 
+            className={`product-card ${product.isOutOfStock ? 'out-of-stock' : ''}`}
             data-aos="fade-up"
           >
+            {product.isOutOfStock && <div className="badges">Out of Stock</div>}
             <Link to={`/product/${product.id}`} className="product-link">
               <img src={product.img} alt={product.name} className="product-img" />
               <div className="product-info">
-                <h3 className="product-nam">{product.name}</h3>
-                <p className="product-pric">
-                  <span className="old-pric">{product.oldPrice}</span>
-                  <span className="new-pric">{product.price}</span>
+                <h3 className="product-name">{product.name}</h3>
+                <p className="product-price">
+                  <span className="old-price">{product.oldPrice}</span>
+                  <span className="new-price">{product.price}</span>
                 </p>
               </div>
             </Link>

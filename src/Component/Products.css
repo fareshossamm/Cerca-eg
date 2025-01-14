@@ -122,6 +122,22 @@
     max-width: 500px;
     margin-bottom: 50px;
 }
+.product-card.out-of-stock {
+    opacity: 0.6;
+    pointer-events: none;
+  }
+  
+  .badges{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
 /* Responsive Styles */
 @media (max-width: 768px) {
     .sizes-img{
